@@ -1,0 +1,22 @@
+{
+  "info": {
+    "name": "FX Deals API",
+    "_postman_id": "uuid",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Import Deal",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"dealId\": \"D125\", \"fromCurrency\": \"USD\", \"toCurrency\": \"EUR\", \"timestamp\": \"2025-11-17T12:00:00\", \"amount\": 500 }"
+        },
+        "url": { "raw": "http://localhost:8080/api/deals", "protocol": "http", "host": ["localhost"], "port": "8080", "path": ["api","deals"] }
+      },
+      "response": []
+    }
+  ]
+}
